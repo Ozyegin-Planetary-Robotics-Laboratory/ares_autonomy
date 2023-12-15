@@ -1,0 +1,12 @@
+[submodule "ozurover_vision"]
+	path = ozurover_vision
+	url = https://github.com/Ozyegin-Planetary-Robotics-Laboratory/ozurover_vision.git
+[submodule "ozurover_locomotion"]
+	path = ozurover_locomotion
+	url = https://github.com/Ozyegin-Planetary-Robotics-Laboratory/ozurover_locomotion.git
+[submodule "ozurover_locator"]
+	path = ozurover_locator
+	url = https://github.com/Ozyegin-Planetary-Robotics-Laboratory/ozurover_locator.git
+[submodule "ozurover_messages"]
+	path = ozurover_messages
+	url = https://github.com/Ozyegin-Planetary-Robotics-Laboratory/ozurover_messages.git

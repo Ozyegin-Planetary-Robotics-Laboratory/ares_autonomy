@@ -1,0 +1,30 @@
+name: Update Submodules
+
+on:
+  schedule:
+    - cron: '30 * * * *'
+
+defaults:
+  run:
+    shell: /bin/bash -leo pipefail {0}
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update submodules
+        run: |
+          git submodule update --recursive --remote
+
+      - name: Git push
+        uses: github-actions-x/commit@v2.9
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: 'main'
+          commit-message: 'Updated submodules.'
+          name: OzU Rover GitHub Actions Initializer
+          email: ozu-rover-github-actions@xreos.co

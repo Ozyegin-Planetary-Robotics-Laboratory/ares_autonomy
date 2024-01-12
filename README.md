@@ -7,4 +7,5 @@ Mother-repository that contains the submodules composing the autonomous navigati
 * ozurover-locator
 * zed-ros-wrapper
 ## Ares Autonomous Navigation Stack System Diagram
-![Autonomy drawio](https://github.com/Ozyegin-Planetary-Robotics-Laboratory/ares_autonomy/assets/118849654/f8230c5b-dcbf-4008-9b62-99d4a86d14d0)
+![Autonomy](https://github.com/Ozyegin-Planetary-Robotics-Laboratory/ares_autonomy/assets/118849654/f83b7a50-1fbe-431a-bb75-fcda0ba6cc1d)
+

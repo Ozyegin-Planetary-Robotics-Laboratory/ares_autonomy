@@ -1,12 +1,19 @@
 name: 'Submodules Sync'
+
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
 
 jobs:
   sync:
+    name: 'Submodules Sync'
     runs-on: ubuntu-latest
     
+    defaults:
+      run:
+        shell: bash
+        
     steps:
       - name: Checkout
         uses: actions/checkout@v3

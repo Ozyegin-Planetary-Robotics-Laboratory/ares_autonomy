@@ -1,26 +1,24 @@
-name: Update Submodules
-
+name: 'Submodules Sync'
 on:
   schedule:
-    - cron: '30 * * * *'
-
-defaults:
-  run:
-    shell: /bin/bash -leo pipefail {0}
+    - cron: '0 0 * * *'
 
 jobs:
-  update-submodules:
+  sync:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: true
 
-      - name: Update submodules
+      - name: Update References
         run: |
+          git pull --recurse-submodules
           git submodule update --recursive --remote
 
-      - name: Git push
+      - name: Push Update
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

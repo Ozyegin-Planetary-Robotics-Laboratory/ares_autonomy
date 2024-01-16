@@ -10,3 +10,6 @@
 [submodule "ozurover_messages"]
 	path = ozurover_messages
 	url = https://github.com/Ozyegin-Planetary-Robotics-Laboratory/ozurover_messages.git
+[submodule "ozurover_control"]
+	path = ozurover_control
+	url = https://github.com/Toprak-Efe/ozurover_control.git

@@ -13,3 +13,6 @@
 [submodule "ozurover_control"]
 	path = ozurover_control
 	url = https://github.com/Toprak-Efe/ozurover_control.git
+[submodule "ozurover_flask"]
+	path = ozurover_flask
+	url = https://github.com/Toprak-Efe/ozurover_flask.git
